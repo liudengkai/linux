@@ -1,0 +1,9 @@
+#calculator application
+function sum(){
+read -p "Please Enter first number:" num1
+read -p "Please Enter second number:" num2
+sum=$((num1+ $num2))
+echo "$num1+$num2=$sum"
+}
+#call function
+sum

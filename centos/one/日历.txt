@@ -1,0 +1,5 @@
+echo "Current work directory:"
+pwd
+echo "file detail information:"
+ls -l
+~        

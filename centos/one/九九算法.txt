@@ -1,0 +1,11 @@
+display=" "
+for i in {1..9}
+do
+for j in `seq $i`
+do
+ display=" $display $j*$i=$((j*$i))"
+done
+display="$display\n"
+done
+echo -e $display
+

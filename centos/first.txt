@@ -1,0 +1,20 @@
+#!/bin/basi
+PRICE=$(expr $RANDOM % 1000)
+TIMES=0
+echo "price 0-999,look "
+while true
+do
+read -p " price sum:" INT
+let times++
+if [ $INT -eq $PRICE ]
+then
+ echo "good,price is $PRICE"
+ echo "$TIMES"
+   exit 0
+elif [ $INT -gt $PRICE ]
+ then
+ echo "high!"
+else
+  echo "low!"
+fi
+done
